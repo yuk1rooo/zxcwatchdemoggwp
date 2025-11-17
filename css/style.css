@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --a: 'arial';
+    --i: 'impact';
+}
+
+h1,h2,h3,h4,h5,h6,ul,p,a,li{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: var(--a);
+    min-width: 330px;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* header start */
+/* ***************************** */
+
+header .poster{
+    background: linear-gradient(to right, #4a0f98, #b16616);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    color: #fff;
+}
+
+header .poster i{
+    font-size: 51px;
+    
+}
+
+header .poster p{
+    width: 160px;
+    font-size: 18px;
+    margin-left: 24px;
+}
+
+header .menu {
+    background: #000;
+}
+
+header .menu nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu nav ul {
+    display: flex;
+}
+
+header .menu nav ul a{
+    font-size: 18px;
+    color: white;
+    padding-top: 43px;
+    padding-left: 12px;
+    padding-bottom: 44px;
+    padding-right: 12px;
+    display: flex;
+    border-bottom: 3px solid transparent;
+    transition: 0.5s;
+}
+
+header .menu nav ul a:hover{
+    border-bottom: 3px solid #c66625;
+    color: #c66625;
+}
+header .text{
+    background: url(../rasm/header-fon.jpg) no-repeat center/cover;
+    padding-top: 187px;
+    padding-bottom: 169px;
+}
+
+header .text h1{
+    font-size: 60px;
+    color: white;
+    font-family: var(--i);
+}
+
+header .text p{
+    font-size: 18px;
+    color: white;
+    max-width: 580px;
+    width: 100%;
+    margin-top: 37px;
+}
+
+header .text .btn a{
+    width: 164px;
+    height: 42px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.6s;
+}
+
+header .text .btn{
+    display: flex;
+    margin-top: 86px;
+    max-width: 359px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header .text .btn a:hover{
+    background: white;
+    color: black;
+}
+
+/* ************************ */
+/* header end */
+
+/* FILM START */
+/* **************** */
+.film{
+    background: #02153a;
+    padding-top: 68px;
+    padding-bottom: 74px;
+}
+
+.film .film-block .box{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.film .film-block .box:hover img{
+    transform: scale(1.5);
+}
+
+.film .film-block .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.film .film-block .box .box-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background: rgba(0, 0, 0, 0.39);
+    padding: 18px;
+    top: 0;
+    left: 0;
+}
+
+.film .film-block .box .box-text i{
+    font-size: 41px;
+}
+
+.film .film-block .box .box-text h3{
+    font-size: 24px;
+    margin-top: 23px;
+    margin-bottom: 17px;
+}
+
+.title{
+    font-size: 36px;
+    color: #eb7e28;
+    border-bottom: 2px solid #eb7e28;
+    display: inline;
+}
+
+.film .film-block{
+    margin-top: 57px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+/* **************** */
+/* FILM END */
+
+/* fon-img start */
+/* ************************* */
+
+.fon-img{
+    background: url(../rasm/fon-section.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    padding-top: 57px;
+    padding-bottom: 59px;
+    
+}
+
+.fon-img img{
+    max-width: 435px;
+    width: 100%;
+    
+}
+
+.fon-img p{
+    max-width: 535px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+}
+
+.fon-img a{
+    width: 164px;
+    height: 43px;
+    background: whitesmoke;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #190d11;
+    margin-top: 50px;
+    transition: 0.6s;
+}
+
+.fon-img a:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* ************************ */
+/* fon-img end */
+
+
+/* Collection Start */
+/* *****************8*8 */
+
+.collections{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #02153a;
+}
+
+.collections .block{
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 27px;
+}
+
+.collections .block .box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.collections .block .box .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: linear-gradient(to right, #4c11958c, #af64198e);
+}
+
+.collections .block .box .box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.collections .block .box i{
+    font-size: 41px;
+    
+}
+
+.collections .block .box p{
+    font-size: 24px;
+    margin-top: 23px;
+}
+
+.collections .block .box  .box-images{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    transform: scale(0.95);
+    top: 5px;
+}
+
+.collections .block .box:hover .box-img{
+    transform: scale(1.5);
+    
+}
+/* ********************88* */
+/* collection end */
+
+/* SERIES START */
+/* *********************** */
+
+.series{
+    padding-top: 20px;
+    padding-bottom: 70px;
+    background: #02153a;
+}
+.series .block{
+    margin-top: 48px;
+    display: grid;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.series .block .box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.series .block .box .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: linear-gradient(to right, #4c11958c, #af64198e);
+}
+
+.series .block .box .box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.series .block .box .text .hhr {
+    width: 164px;
+    height: 42px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.6s;
+    margin-top: 30px;
+}
+.series .block .box .text .hhr:hover{
+    color: black;
+    background: white;
+}
+
+.series .block .box .text h3{
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.series .block .box .text p{
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+}
+
+.series .series_block .box{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.series .series_block .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.series .series_block .box a{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #4c11958c, #af64198e );
+    color: white;
+    font-size: 24px;
+}
+
+.series .series_block .box i{
+    font-size: 41px;
+    margin-bottom: 24px;
+}
+
+.series .series_block .box:hover img{
+    transform: scale(1.5);
+}
+
+.series .series_block{
+    margin-top: 30px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "box-1 box-1 box-2 box-3"
+    "box-1 box-1 box-4 box-5"
+    ;
+}
+
+.series .series_block .box-1{
+    grid-area: box-1;
+}
+.series .series_block .box-2{
+    grid-area: box-2;
+}
+.series .series_block .box-3{
+    grid-area: box-3;
+}
+.series .series_block .box-4{
+    grid-area: box-4;
+}
+.series .series_block .box-5{
+    grid-area: box-5;
+}
+
+
+/* *********************** */
+/* SERIES END */
+
+
+/* FOOTER START */
+/* *********************** */
+
+footer .box{
+    width: 100%;
+    height: 92px;
+    background: linear-gradient(to right, #f28429, #934c03);
+}
+
+/* *********************** */
+/* FOOTER END */
